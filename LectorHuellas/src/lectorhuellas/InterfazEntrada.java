@@ -7,14 +7,14 @@ import java.util.Date;
 import java.util.GregorianCalendar;
 import javax.swing.ImageIcon;
 
-public class InterfazChecador extends javax.swing.JFrame {
+public class InterfazEntrada extends javax.swing.JFrame {
 
     DateFormat F_fecha=new SimpleDateFormat("'Hoy es 'EEEE', 'dd' de 'MMMM' de 'y");
     DateFormat F_hora=new SimpleDateFormat("hh:mm:ss a");
     
     java.util.Calendar Calendario;
     int dia, mes, año, hora, minutos, segundos; 
-    public InterfazChecador() {
+    public InterfazEntrada() {
         initComponents();
         
         
@@ -152,13 +152,13 @@ public class InterfazChecador extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(InterfazChecador.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(InterfazEntrada.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(InterfazChecador.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(InterfazEntrada.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(InterfazChecador.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(InterfazEntrada.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(InterfazChecador.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(InterfazEntrada.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
         //</editor-fold>
@@ -168,7 +168,7 @@ public class InterfazChecador extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new InterfazChecador().setVisible(true);
+                new InterfazEntrada().setVisible(true);
             }
         });
     }
